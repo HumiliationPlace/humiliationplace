@@ -1,0 +1,12 @@
+curl -X POST https://api.commerce.coinbase.com/charges/ \
+-H "Content-Type: application/json" \
+-H "X-CC-Api-Key: 064ea29d-faed-4bb9-a0ce-7eacb45fddef" \
+-d '{
+      "name": "Post Removal",
+      "description": "Post Removal Fee",
+      "pricing_type": "fixed_price",
+      "local_price": {
+        "amount": "1.00",
+        "currency": "USD"
+      }
+    }'
